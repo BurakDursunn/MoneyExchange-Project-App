@@ -1,0 +1,4 @@
+exchange:
+  api:
+    url: https://api.exchangeratesapi.io/v1/latest
+    key: 79d0f0141851b91a336994c33a8b438a
