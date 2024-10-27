@@ -1,4 +1,5 @@
 import './App.css';
+import Contact from './Contact';
 import CurrencyList from './CurrencyList';
 import Footer from './Footer';
 import GoldPrices from './GoldPrices';
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
      
       <Header />
+      <Contact />
       <CurrencyList />
       <GoldPrices/>
       <NewsList />

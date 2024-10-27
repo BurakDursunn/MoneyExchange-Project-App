@@ -19,7 +19,7 @@ const contentStyle = {
 const imageStyle = {
     width: '50px',
     height: '50px',
-    borderRadius: '50%',
+    borderRadius: '10%',
     marginRight: '15px',
 };
 
