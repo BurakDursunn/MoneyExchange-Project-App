@@ -5,7 +5,7 @@ import { Button, Modal, Container, Row, Col } from 'react-bootstrap';
 const imageStyle = {
     width: '450px',
     height: '250px',
-    borderRadius: '10%',
+    borderRadius: '1%',
     marginRight: '15px',
 };
 
