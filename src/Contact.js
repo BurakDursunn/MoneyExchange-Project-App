@@ -36,7 +36,7 @@ const Contact = () => {
                             <p><strong>Instagram Adresi:</strong> @altinsankuyumculuk</p>
                             <p><strong>Adres:</strong> Kaş mah, Kalkan, Antalya, Türkiye</p>
                             <img
-                    src="/images/kv.png" // Sadece /images ile başlayan yolu kullanın
+                    src="/images/akkv.jpg" // Sadece /images ile başlayan yolu kullanın
                     alt="Logo"
                     style={imageStyle}
                 />
