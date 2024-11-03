@@ -1,7 +1,6 @@
 // Header.js
 import React from 'react';
 
-// CSS stilini doğrudan buraya ekledik
 const headerStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -36,7 +35,7 @@ const Header = () => {
         <header style={headerStyle}>
             <div style={contentStyle}>
                 <img
-                    src="/images/ALTINSANKUY.png" // Sadece /images ile başlayan yolu kullanın
+                    src="/images/ALTINSANKUY.png" 
                     alt="Logo"
                     style={imageStyle}
                 />

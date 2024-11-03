@@ -9,9 +9,6 @@ const imageStyle = {
     marginRight: '15px',
 };
 
-
-
-
 const Contact = () => {
     const [show, setShow] = useState(false);
 
@@ -36,7 +33,7 @@ const Contact = () => {
                             <p><strong>Instagram Adresi:</strong> @altinsankuyumculuk</p>
                             <p><strong>Adres:</strong> Kaş mah, Kalkan, Antalya, Türkiye</p>
                             <img
-                    src="/images/akkv.jpg" // Sadece /images ile başlayan yolu kullanın
+                    src="/images/akkv.jpg"
                     alt="Logo"
                     style={imageStyle}
                 />

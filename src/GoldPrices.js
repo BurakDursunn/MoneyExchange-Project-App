@@ -9,18 +9,18 @@ const GoldPrices = () => {
     useEffect(() => {
         const fetchGoldPrices = async () => {
             try {
-                const response = await fetch('http://localhost:8080/api/gold-prices'); // Backend portunuza göre ayarlayın
+                const response = await fetch('http://localhost:8080/api/gold-prices'); 
 
                 if (!response.ok) {
                     throw new Error('Ağ yanıtı beklenilen gibi değil');
                 }
 
                 const data = await response.json();
-                console.log(data); // Gelen veriyi konsola yazdırın
-                setGoldPrices(data); // Alınan veriyi state'e atıyoruz
+                console.log(data); 
+                setGoldPrices(data); 
             } catch (error) {
                 console.error('Altın fiyatlarını yüklerken hata oluştu:', error);
-                setError('Altın fiyatlarını yüklerken bir hata oluştu. Lütfen daha sonra tekrar deneyin.'); // Hata mesajı
+                setError('Altın fiyatlarını yüklerken bir hata oluştu. Lütfen daha sonra tekrar deneyin.'); 
             } finally {
                 setLoading(false);
             }
@@ -41,7 +41,7 @@ const GoldPrices = () => {
                     {loading ? (
                         <p style={{ textAlign: 'center' }}>Yükleniyor...</p>
                     ) : error ? (
-                        <p style={{ textAlign: 'center', color: 'red' }}>{error}</p> // Hata mesajını burada gösteriyoruz
+                        <p style={{ textAlign: 'center', color: 'red' }}>{error}</p> 
                     ) : (
                         <Table striped bordered hover>
                             <thead>
@@ -54,7 +54,7 @@ const GoldPrices = () => {
                                 {goldEntries.map(([key, value]) => (
                                     <tr key={key}>
                                         <td>{key}</td>
-                                        <td>{value.toFixed(2)} TRY</td> {/* Formatlanmış fiyat değeri */}
+                                        <td>{value.toFixed(2)} TRY</td> {}
                                     </tr>
                                 ))}
                             </tbody>

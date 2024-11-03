@@ -38,7 +38,7 @@ const CurrencyList = () => {
                             {Object.entries(currencyRates).map(([currency, rate]) => (
                                 <tr key={currency}>
                                     <td>{currency}</td>
-                                    <td>{rate}</td> {/* Formatlanmış döviz değeri */}
+                                    <td>{rate}</td> {}
                                 </tr>
                             ))}
                         </tbody>

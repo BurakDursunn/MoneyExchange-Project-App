@@ -7,7 +7,7 @@ const footerStyle = {
     textAlign: 'center',
     padding: '15px 0',
     width: '100%',
-    position: 'relative', // Sabit değil, en alta konumlanacak
+    position: 'relative', 
     fontSize: '0.9rem',
 };
 
