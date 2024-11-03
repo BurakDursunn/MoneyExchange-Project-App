@@ -1,22 +1,17 @@
 package com.example.moneyexchange.model;
 
-
 public class News {
     private String title;
     private String description;
     private String url;
     private String publishedAt;
 
-
-    // Constructor
     public News(String title, String description, String url, String publishedAt) {
         this.title = title;
         this.description = description;
         this.url = url;
         this.publishedAt = publishedAt;
     }
-
-    // Getter ve Setter metodları
 
     public String getTitle() {
         return title;
@@ -50,7 +45,6 @@ public class News {
         this.publishedAt = publishedAt;
     }
 
-    // toString metodu
     @Override
     public String toString() {
         return "News{" +

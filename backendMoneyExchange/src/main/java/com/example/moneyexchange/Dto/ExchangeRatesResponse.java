@@ -7,9 +7,6 @@ public class ExchangeRatesResponse {
     private String base;
     private String date;
 
-
-
-    // Getter ve Setter metodları
     public Map<String, Double> getRates() {
         return rates;
     }
@@ -34,4 +31,3 @@ public class ExchangeRatesResponse {
         this.date = date;
     }
 }
-

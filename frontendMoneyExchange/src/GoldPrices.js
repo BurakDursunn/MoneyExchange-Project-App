@@ -32,7 +32,6 @@ const GoldPrices = () => {
     // İlk 10 fiyatı almak için
     const goldEntries = Object.entries(goldPrices).slice(0, 10);
 
-    
     return (
         <Container className="mt-5">
             <Row className="justify-content-center">

@@ -15,8 +15,6 @@ public class GoldController {
         this.goldService = goldService;
     }
 
-
-
     @GetMapping("/api/gold-prices")
     public Map<String, Double> getGoldPrices() {
         return goldService.getGoldRates();

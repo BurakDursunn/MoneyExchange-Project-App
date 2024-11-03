@@ -19,7 +19,6 @@ const NewsList = () => {
     const [news, setNews] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
-
     
     useEffect(() => {
         const fetchNews = async () => {

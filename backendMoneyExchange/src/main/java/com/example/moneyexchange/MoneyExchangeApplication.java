@@ -10,6 +10,5 @@ public class MoneyExchangeApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MoneyExchangeApplication.class, args);
-
     }
 }

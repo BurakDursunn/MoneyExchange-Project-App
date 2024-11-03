@@ -13,12 +13,9 @@ public class NewsController {
     private final String apiKey = "c1404eac823e4a9880a82ec3264e99f7"; // API anahtarınızı buraya ekleyin
     private final String apiUrl = "https://newsapi.org/v2/top-headlines?category=business&apiKey=" + apiKey;
 
-
     public NewsController(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
-
-
 
     @GetMapping("/news")
     public List<Map<String, Object>> getLatestNews() {

@@ -20,7 +20,6 @@ public class GoldService {
         updateGoldRates();
     }
 
-
     @Scheduled(cron = "0 0 0 * * ?") // Her gün saat 00:00'da çalışacak
     public void updateGoldRates() {
         RestTemplate restTemplate = new RestTemplate();
@@ -34,8 +33,6 @@ public class GoldService {
         }
     }
 
-
-    
     public Map<String, Double> getGoldRates() {
         return goldRates; // Güncel fiyatları döner
     }

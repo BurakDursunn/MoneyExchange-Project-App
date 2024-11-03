@@ -11,14 +11,12 @@ public class HomeController {
 
     private final CurrencyService currencyService;
 
-
     public HomeController(CurrencyService currencyService) {
         this.currencyService = currencyService;
     }
 
     @GetMapping("/currency-rates")
     public Map<String, String> getCurrencyRates() {
-        // Güncellenmiş metot olan getRates() çağrılıyor
         return currencyService.getRates();
     }
 }

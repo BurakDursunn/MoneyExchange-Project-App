@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, Container, Row, Col } from 'react-bootstrap';
 
-
 const imageStyle = {
     width: '450px',
     height: '250px',

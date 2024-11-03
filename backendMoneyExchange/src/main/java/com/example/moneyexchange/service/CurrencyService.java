@@ -12,13 +12,10 @@ import java.util.Set;
 public class CurrencyService {
 
     private final RestTemplate restTemplate;
-    private final String apiKey = "518b2e215644e9d75c4a7c317ad5b53f"; // API anahtarınızı buraya yazın
+    private final String apiKey = "518b2e215644e9d75c4a7c317ad5b53f";
     private final String apiUrl = "https://api.exchangeratesapi.io/v1/latest";
     private final Set<String> popularCurrencies = Set.of(
-            "USD", "EUR", "GBP", "AUD", "CAD", "CHF", "CNY", "SEK", "RUB"
-    );
-
-
+            "USD", "EUR", "GBP", "AUD", "CAD", "CHF", "CNY", "SEK", "RUB");
 
     // Önbellek olarak kullanılacak değişken
     private Map<String, String> cachedRates = new HashMap<>();
@@ -28,7 +25,8 @@ public class CurrencyService {
         this.restTemplate = restTemplate;
     }
 
-    // Günlük olarak her gece saat 2'de (sistem saatine göre) verileri güncelleyen yöntem
+    // Günlük olarak her gece saat 2'de (sistem saatine göre) verileri güncelleyen
+    // yöntem
     @Scheduled(cron = "0 0 2 * * *") // Günde bir defa çalışması için cron ifadesi: "Her gün saat 02:00'de"
     public void refreshRates() {
         Map<String, String> updatedRates = fetchLatestRates();

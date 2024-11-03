@@ -24,8 +24,7 @@ const CurrencyList = () => {
             
             <Row className="justify-content-center">
                 <Col md={5}>
-                   
-                    
+                      
                     <h1 className="text-center mb-4">Serbest Piyasa Döviz Kurları</h1>
                     <Table striped bordered hover>
                         <thead>
